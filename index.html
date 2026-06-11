@@ -9,33 +9,31 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#ffffff;color:#1e293b;line-height:1.6}
+body{font-family:"Inter",sans-serif;background:#ffffff;color:#1e293b;line-height:1.6}
 a{color:inherit;text-decoration:none}
 nav{position:sticky;top:0;background:#ffffffee;backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;z-index:100}
 .nav-logo{font-size:15px;font-weight:600;color:#1e293b}
 .nav-links{display:flex;gap:1.5rem}
 .nav-links a{font-size:13px;color:#64748b;transition:color 0.2s}
 .nav-links a:hover{color:#1e293b}
-.hero{max-width:960px;margin:0 auto;padding:5rem 2rem 4rem;display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center}
-.hero-left{}
+.hero{max-width:960px;margin:0 auto;padding:5rem 2rem 4rem;display:grid;grid-template-columns:1fr 240px;gap:4rem;align-items:start}
 .hero-eyebrow{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;margin-bottom:1rem}
-.hero-name{font-size:44px;font-weight:600;line-height:1.1;margin-bottom:0.75rem;color:#0f172a}
+.hero-name{font-size:40px;font-weight:600;line-height:1.1;margin-bottom:0.75rem;color:#0f172a}
 .hero-title{font-size:15px;color:#64748b;margin-bottom:1.5rem;line-height:1.7}
-.hero-intro{font-size:14px;color:#475569;line-height:1.8;margin-bottom:2rem;max-width:580px}
+.hero-intro{font-size:14px;color:#475569;line-height:1.9;margin-bottom:2rem}
 .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2rem}
 .badge{font-size:11px;padding:5px 12px;border-radius:20px;border:1px solid #e2e8f0;color:#64748b;display:inline-flex;align-items:center;gap:5px}
-.badge i{font-size:13px}
 .badge.cert{background:#f0fdf4;color:#16a34a;border-color:#bbf7d0}
 .badge.open{background:#eff6ff;color:#2563eb;border-color:#bfdbfe}
 .hero-links{display:flex;gap:12px;flex-wrap:wrap}
 .hero-link{font-size:13px;color:#2563eb;display:inline-flex;align-items:center;gap:5px;padding:8px 16px;border:1px solid #bfdbfe;border-radius:8px;transition:all 0.2s;background:#eff6ff}
-.hero-link:hover{background:#dbeafe;border-color:#93c5fd}
+.hero-link:hover{background:#dbeafe}
 .hero-link i{font-size:15px}
-.hero-photo{width:220px;height:260px;border-radius:16px;object-fit:cover;object-position:top;border:3px solid #e2e8f0;flex-shrink:0}
+.hero-photo{width:220px;height:270px;border-radius:16px;object-fit:cover;object-position:top;border:3px solid #e2e8f0;display:block}
 .container{max-width:960px;margin:0 auto;padding:0 2rem}
 .section{padding:3rem 0}
 .section-label{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;margin-bottom:1.5rem;display:flex;align-items:center;gap:10px}
-.section-label::after{content:'';flex:1;height:1px;background:#e2e8f0}
+.section-label::after{content:"";flex:1;height:1px;background:#e2e8f0}
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:3rem}
 .stat{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1.25rem;text-align:center}
 .stat-num{font-size:28px;font-weight:600;color:#0f172a;margin-bottom:4px}
@@ -63,7 +61,6 @@ nav{position:sticky;top:0;background:#ffffffee;backdrop-filter:blur(12px);border
 .project-footer{display:flex;align-items:center;justify-content:space-between;padding-top:0.875rem;border-top:1px solid #f1f5f9}
 .project-lab{font-size:11px;color:#94a3b8;font-weight:500}
 .project-link{font-size:12px;color:#2563eb;display:inline-flex;align-items:center;gap:3px}
-.project-link:hover{color:#1d4ed8}
 .project-link i{font-size:13px}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
 .skill-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1rem}
@@ -90,16 +87,13 @@ nav{position:sticky;top:0;background:#ffffffee;backdrop-filter:blur(12px);border
 footer{background:#f8fafc;border-top:1px solid #e2e8f0;padding:2.5rem 2rem;margin-top:2rem}
 .footer-inner{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
 .footer-contact{display:flex;flex-wrap:wrap;gap:16px}
-.footer-item{font-size:13px;color:#64748b;display:flex;align-items:center;gap:6px;transition:color 0.2s}
-.footer-item:hover{color:#2563eb}
+.footer-item{font-size:13px;color:#64748b;display:flex;align-items:center;gap:6px}
 .footer-item i{font-size:15px}
 .footer-copy{font-size:12px;color:#94a3b8}
-.divider{height:1px;background:#e2e8f0}
-@media(max-width:700px){.hero{grid-template-columns:1fr}.hero-photo{display:none}.hero-name{font-size:32px}.nav-links{display:none}}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.hero-photo{display:none}.hero-name{font-size:28px}.nav-links{display:none}}
 </style>
 </head>
 <body>
-
 <nav>
   <span class="nav-logo">Emmanuel Balogun</span>
   <div class="nav-links">
@@ -109,19 +103,15 @@ footer{background:#f8fafc;border-top:1px solid #e2e8f0;padding:2.5rem 2rem;margi
     <a href="#contact">Contact</a>
   </div>
 </nav>
-
 <div class="hero" id="about">
-  <div class="hero-left">
-    <p class="hero-eyebrow">Identity & Access Management Portfolio</p>
+  <div>
+    <p class="hero-eyebrow">Identity &amp; Access Management Portfolio</p>
     <h1 class="hero-name">Hi, I'm Emmanuel Balogun</h1>
-    <p class="hero-title">IAM Analyst · Microsoft Entra ID · Okta · Zero Trust · Active Directory</p>
+    <p class="hero-title">IAM Analyst &middot; Microsoft Entra ID &middot; Okta &middot; Zero Trust &middot; Active Directory</p>
     <p class="hero-intro">
-      I am an Identity and Access Management professional with 4+ years of enterprise IT experience spanning IT support, identity and access management, and help desk operations across both private and government sectors. I hold a Master of Science in Management Information Systems from Texas Southern University, where I built a strong foundation in enterprise systems, cybersecurity, and IT governance.
-      <br><br>
-      I specialize in Microsoft Entra ID, Active Directory, Okta, Conditional Access, Privileged Identity Management, and Zero Trust architecture. I hold CompTIA Security+, Microsoft SC-300 (Identity and Access Administrator), and Okta Certified Professional certifications, demonstrating my commitment to industry-recognized standards in identity security.
-      <br><br>
-      My portfolio demonstrates hands-on IAM projects built in real Microsoft 365 and Entra ID environments, covering user lifecycle management, MFA enforcement, just-in-time privileged access, identity governance and access reviews, Zero Trust guest access, Active Directory administration, identity protection and risk policies, Okta SSO and lifecycle automation, RBAC cleanup, and hybrid identity with Entra Connect.
-      <br><br>
+      I am an Identity and Access Management professional with 4+ years of enterprise IT experience spanning IT support, identity and access management, and help desk operations across both private and government sectors. I hold a Master of Science in Management Information Systems from Texas Southern University, where I built a strong foundation in enterprise systems, cybersecurity, and IT governance.<br><br>
+      I specialize in Microsoft Entra ID, Active Directory, Okta, Conditional Access, Privileged Identity Management, and Zero Trust architecture. I hold CompTIA Security+, Microsoft SC-300 (Identity and Access Administrator), and Okta Certified Professional certifications, demonstrating my commitment to industry-recognized standards in identity security.<br><br>
+      My portfolio demonstrates hands-on IAM projects built in real Microsoft 365 and Entra ID environments, covering user lifecycle management, MFA enforcement, just-in-time privileged access, identity governance and access reviews, Zero Trust guest access, Active Directory administration, identity protection and risk policies, Okta SSO and lifecycle automation, RBAC cleanup, and hybrid identity with Entra Connect.<br><br>
       I am passionate about helping organizations secure digital identities, enforce least privilege, reduce access risk, and align identity operations with modern Zero Trust principles. I am currently open to mid-level IAM Analyst roles and eager to bring my technical skills, portfolio experience, and certification knowledge to a team that values strong identity security practices.
     </p>
     <div class="hero-badges">
@@ -137,9 +127,7 @@ footer{background:#f8fafc;border-top:1px solid #e2e8f0;padding:2.5rem 2rem;margi
   </div>
   <img class="hero-photo" src="emmanuel_profile.jpg" alt="Emmanuel Balogun">
 </div>
-
 <div class="container">
-
   <div class="section">
     <div class="stats-grid">
       <div class="stat"><div class="stat-num">10</div><div class="stat-label">IAM Labs</div></div>
@@ -149,283 +137,27 @@ footer{background:#f8fafc;border-top:1px solid #e2e8f0;padding:2.5rem 2rem;margi
       <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Years Experience</div></div>
     </div>
   </div>
-
   <div class="section" id="labs">
     <p class="section-label">Labs</p>
     <div class="projects-grid">
-
       <div class="project-card" onclick="window.open('https://github.com/Emmanuel-IAM-LAB/IAM-Portfolio/tree/main/lab-01-user-lifecycle-management','_blank')">
-        <div class="project-header">
-          <div class="project-icon pi-teal"><i class="ti ti-users"></i></div>
-          <span class="project-status status-done">Complete</span>
-        </div>
+        <div class="project-header"><div class="project-icon pi-teal"><i class="ti ti-users"></i></div><span class="project-status status-done">Complete</span></div>
         <p class="project-name">User Lifecycle Management</p>
         <p class="project-desc">Bulk provisioned 50 users across 25+ US states with full identity attributes. Created 6 security groups and simulated secure offboarding of a terminated employee.</p>
         <div class="project-tags"><span class="tag">Entra ID</span><span class="tag">Graph PowerShell</span><span class="tag">Provisioning</span><span class="tag">Offboarding</span></div>
-        <div class="project-footer">
-          <span class="project-lab">Lab 01</span>
-          <a class="project-link" href="https://github.com/Emmanuel-IAM-LAB/IAM-Portfolio/tree/main/lab-01-user-lifecycle-management" target="_blank"><i class="ti ti-external-link"></i>View lab</a>
-        </div>
+        <div class="project-footer"><span class="project-lab">Lab 01</span><a class="project-link" href="https://github.com/Emmanuel-IAM-LAB/IAM-Portfolio/tree/main/lab-01-user-lifecycle-management" target="_blank"><i class="ti ti-external-link"></i>View lab</a></div>
       </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-blue"><i class="ti ti-shield-lock"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">MFA & Conditional Access</p>
-        <p class="project-desc">Simulated a phishing attack and built Conditional Access policies enforcing MFA, blocking legacy auth, and restricting sign-ins by location and device compliance.</p>
-        <div class="project-tags"><span class="tag">Conditional Access</span><span class="tag">MFA</span><span class="tag">Zero Trust</span><span class="tag">Entra ID</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 02</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-purple"><i class="ti ti-crown"></i></div><span class="project-status status-progress">Coming
-
-cp /mnt/user-data/uploads/emmanuel_profile.jpg ~/IAM-Portfolio/emmanuel_profile.jpg
-cat > ~/IAM-Portfolio/index.html << 'HTMLEOF'
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emmanuel Balogun | IAM Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#ffffff;color:#1e293b;line-height:1.6}
-a{color:inherit;text-decoration:none}
-nav{position:sticky;top:0;background:#ffffffee;backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;z-index:100}
-.nav-logo{font-size:15px;font-weight:600;color:#1e293b}
-.nav-links{display:flex;gap:1.5rem}
-.nav-links a{font-size:13px;color:#64748b;transition:color 0.2s}
-.nav-links a:hover{color:#1e293b}
-.hero{max-width:960px;margin:0 auto;padding:5rem 2rem 4rem;display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center}
-.hero-left{}
-.hero-eyebrow{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;margin-bottom:1rem}
-.hero-name{font-size:44px;font-weight:600;line-height:1.1;margin-bottom:0.75rem;color:#0f172a}
-.hero-title{font-size:15px;color:#64748b;margin-bottom:1.5rem;line-height:1.7}
-.hero-intro{font-size:14px;color:#475569;line-height:1.8;margin-bottom:2rem;max-width:580px}
-.hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2rem}
-.badge{font-size:11px;padding:5px 12px;border-radius:20px;border:1px solid #e2e8f0;color:#64748b;display:inline-flex;align-items:center;gap:5px}
-.badge i{font-size:13px}
-.badge.cert{background:#f0fdf4;color:#16a34a;border-color:#bbf7d0}
-.badge.open{background:#eff6ff;color:#2563eb;border-color:#bfdbfe}
-.hero-links{display:flex;gap:12px;flex-wrap:wrap}
-.hero-link{font-size:13px;color:#2563eb;display:inline-flex;align-items:center;gap:5px;padding:8px 16px;border:1px solid #bfdbfe;border-radius:8px;transition:all 0.2s;background:#eff6ff}
-.hero-link:hover{background:#dbeafe;border-color:#93c5fd}
-.hero-link i{font-size:15px}
-.hero-photo{width:220px;height:260px;border-radius:16px;object-fit:cover;object-position:top;border:3px solid #e2e8f0;flex-shrink:0}
-.container{max-width:960px;margin:0 auto;padding:0 2rem}
-.section{padding:3rem 0}
-.section-label{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;margin-bottom:1.5rem;display:flex;align-items:center;gap:10px}
-.section-label::after{content:'';flex:1;height:1px;background:#e2e8f0}
-.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:3rem}
-.stat{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1.25rem;text-align:center}
-.stat-num{font-size:28px;font-weight:600;color:#0f172a;margin-bottom:4px}
-.stat-label{font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:0.05em}
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.project-card{background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:1.5rem;transition:all 0.2s;cursor:pointer}
-.project-card:hover{border-color:#93c5fd;box-shadow:0 4px 20px #2563eb10;transform:translateY(-2px)}
-.project-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1rem}
-.project-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-.pi-teal{background:#f0fdf4;color:#16a34a}
-.pi-blue{background:#eff6ff;color:#2563eb}
-.pi-purple{background:#faf5ff;color:#7c3aed}
-.pi-amber{background:#fffbeb;color:#d97706}
-.pi-coral{background:#fff1f2;color:#e11d48}
-.pi-green{background:#f0fdf4;color:#15803d}
-.pi-pink{background:#fdf2f8;color:#db2777}
-.pi-gray{background:#f8fafc;color:#475569}
-.project-status{font-size:10px;padding:3px 10px;border-radius:20px;font-weight:500}
-.status-done{background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0}
-.status-progress{background:#fffbeb;color:#d97706;border:1px solid #fde68a}
-.project-name{font-size:14px;font-weight:600;color:#0f172a;margin-bottom:0.5rem}
-.project-desc{font-size:12px;color:#64748b;line-height:1.6;margin-bottom:1rem}
-.project-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1rem}
-.tag{font-size:10px;padding:2px 8px;border-radius:4px;background:#f1f5f9;color:#64748b}
-.project-footer{display:flex;align-items:center;justify-content:space-between;padding-top:0.875rem;border-top:1px solid #f1f5f9}
-.project-lab{font-size:11px;color:#94a3b8;font-weight:500}
-.project-link{font-size:12px;color:#2563eb;display:inline-flex;align-items:center;gap:3px}
-.project-link:hover{color:#1d4ed8}
-.project-link i{font-size:13px}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-.skill-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1rem}
-.skill-name{font-size:13px;font-weight:500;color:#1e293b;margin-bottom:8px;display:flex;align-items:center;gap:6px}
-.skill-name i{font-size:15px;color:#94a3b8}
-.skill-bar-bg{height:3px;background:#e2e8f0;border-radius:2px;overflow:hidden}
-.skill-bar{height:3px;border-radius:2px}
-.sb-teal{background:#16a34a}
-.sb-blue{background:#2563eb}
-.sb-purple{background:#7c3aed}
-.sb-amber{background:#d97706}
-.sb-coral{background:#e11d48}
-.soft-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.soft-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem}
-.soft-icon{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:17px;margin-bottom:0.75rem}
-.si-teal{background:#f0fdf4;color:#16a34a}
-.si-blue{background:#eff6ff;color:#2563eb}
-.si-purple{background:#faf5ff;color:#7c3aed}
-.si-amber{background:#fffbeb;color:#d97706}
-.si-coral{background:#fff1f2;color:#e11d48}
-.si-green{background:#f0fdf4;color:#15803d}
-.soft-name{font-size:13px;font-weight:600;color:#0f172a;margin-bottom:5px}
-.soft-desc{font-size:12px;color:#64748b;line-height:1.5}
-footer{background:#f8fafc;border-top:1px solid #e2e8f0;padding:2.5rem 2rem;margin-top:2rem}
-.footer-inner{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
-.footer-contact{display:flex;flex-wrap:wrap;gap:16px}
-.footer-item{font-size:13px;color:#64748b;display:flex;align-items:center;gap:6px;transition:color 0.2s}
-.footer-item:hover{color:#2563eb}
-.footer-item i{font-size:15px}
-.footer-copy{font-size:12px;color:#94a3b8}
-.divider{height:1px;background:#e2e8f0}
-@media(max-width:700px){.hero{grid-template-columns:1fr}.hero-photo{display:none}.hero-name{font-size:32px}.nav-links{display:none}}
-</style>
-</head>
-<body>
-
-<nav>
-  <span class="nav-logo">Emmanuel Balogun</span>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#labs">Labs</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<div class="hero" id="about">
-  <div class="hero-left">
-    <p class="hero-eyebrow">Identity & Access Management Portfolio</p>
-    <h1 class="hero-name">Hi, I'm Emmanuel Balogun</h1>
-    <p class="hero-title">IAM Analyst · Microsoft Entra ID · Okta · Zero Trust · Active Directory</p>
-    <p class="hero-intro">
-      I am an Identity and Access Management professional with 4+ years of enterprise IT experience spanning IT support, identity and access management, and help desk operations across both private and government sectors. I hold a Master of Science in Management Information Systems from Texas Southern University, where I built a strong foundation in enterprise systems, cybersecurity, and IT governance.
-      <br><br>
-      I specialize in Microsoft Entra ID, Active Directory, Okta, Conditional Access, Privileged Identity Management, and Zero Trust architecture. I hold CompTIA Security+, Microsoft SC-300 (Identity and Access Administrator), and Okta Certified Professional certifications, demonstrating my commitment to industry-recognized standards in identity security.
-      <br><br>
-      My portfolio demonstrates hands-on IAM projects built in real Microsoft 365 and Entra ID environments, covering user lifecycle management, MFA enforcement, just-in-time privileged access, identity governance and access reviews, Zero Trust guest access, Active Directory administration, identity protection and risk policies, Okta SSO and lifecycle automation, RBAC cleanup, and hybrid identity with Entra Connect.
-      <br><br>
-      I am passionate about helping organizations secure digital identities, enforce least privilege, reduce access risk, and align identity operations with modern Zero Trust principles. I am currently open to mid-level IAM Analyst roles and eager to bring my technical skills, portfolio experience, and certification knowledge to a team that values strong identity security practices.
-    </p>
-    <div class="hero-badges">
-      <span class="badge cert"><i class="ti ti-certificate"></i>CompTIA Security+</span>
-      <span class="badge cert"><i class="ti ti-certificate"></i>SC-300</span>
-      <span class="badge cert"><i class="ti ti-certificate"></i>Okta Certified Professional</span>
-      <span class="badge open"><i class="ti ti-briefcase"></i>Open to Work</span>
-    </div>
-    <div class="hero-links">
-      <a class="hero-link" href="https://github.com/Emmanuel-IAM-LAB/IAM-Portfolio" target="_blank"><i class="ti ti-brand-github"></i>GitHub</a>
-      <a class="hero-link" href="https://www.linkedin.com/in/emmanuel-b-616a0137a" target="_blank"><i class="ti ti-brand-linkedin"></i>LinkedIn</a>
+      <div class="project-card"><div class="project-header"><div class="project-icon pi-blue"><i class="ti ti-shield-lock"></i></div><span class="project-status status-progress">Coming soon</span></div><p class="project-name">MFA &amp; Conditional Access</p><p class="project-desc">Simulated a phishing attack and built Conditional Access policies enforcing MFA, blocking legacy auth, and restricting sign-ins by location and device compliance.</p><div class="project-tags"><span class="tag">Conditional Access</span><span class="tag">MFA</span><span class="tag">Zero Trust</span></div><div class="project-footer"><span class="project-lab">Lab 02</span><span style="font-size:12px;color:#94a3b8">In progress</span></div></div>
+      <div class="project-card"><div class="project-header"><div class="project-icon pi-purple"><i class="ti ti-crown"></i></div><span class="project-status status-progress">Coming soon</span></div><p class="project-name">Privileged Identity Management</p><p class="project-desc">Removed permanent admin assignments and configured PIM just-in-time access with approval workflows, time limits, and audit logging.</p><div class="project-tags"><span class="tag">PIM</span><span class="tag">Least Privilege</span><span class="tag">JIT Access</span></div><div class="project-footer"><span class="project-lab">Lab 03</span><span style="font-size:12px;color:#94a3b8">In progress</span></div></div>
+      <div class="project-card"><div class="project-header"><div class="project-icon pi-amber"><i class="ti ti-clipboard-check"></i></div><span class="project-status status-progress">Coming soon</span></div><p class="project-name">Identity Governance &amp; Access Reviews</p><p class="project-desc">Configured access reviews to audit group memberships, notify managers for approval, and auto-remove stale access after 14 days.</p><div class="project-tags"><span class="tag">Access Reviews</span><span class="tag">Identity Governance</span></div><div class="project-footer"><span class="project-lab">Lab 04</span><span style="font-size:12px;color:#94a3b8">In progress</span></div></div>
+      <div class="project-card"><div class="project-header"><div class="project-icon pi-coral"><i class="ti ti-network"></i></div><span class="project-status status-progress">Coming soon</span></div><p class="project-name">Zero Trust &amp; Guest Access</p><p class="project-desc">Configured B2B guest access with scoped entitlement packages, expiration dates, and auto-removal for third-party vendors.</p><div class="project-tags"><span class="tag">Zero Trust</span><span class="tag">B2B Guest</span><span class="tag">RBAC</span></div><div class="project-footer"><span class="project-lab">Lab 05</span><span style="font-size:12px;color:#94a3b8">In progress</span></div></div>
+      <div class="project-card"><div class="project-header"><div class="project-icon pi-green"><i class="ti ti-device-desktop"></i></div><span class="project-status status-progress">Coming soon</span></div><p class="project-name">Active Directory Home Lab</p><p class="project-desc">Built a full on-premises AD environment with Windows Server 2022, OUs, GPOs, fine-grained password policies, and domain-joined clients.</p><div class="project-tags"><span class="tag">Active Directory</span><span class="tag">Windows Server</span><span class="tag">GPO</span></div><div class="project-footer"><span class="project-lab">Lab 06</span><span style="font-size:12px;color:#94a3b8">In progress</span></div></div>
+      <div class="project-card"><div class="project-header"><div class="project-icon pi-pink"><i class="ti ti-refresh-alert"></i></div><span class="project-status status-progress">Coming soon</span></div><p class="project-name">Identity Protection &amp; Risk Policies</p><p class="project-desc">Configured Entra ID Protection to detect risky sign-ins and set up risk-based Conditional Access policies with automated remediation.</p><div class="project-tags"><span class="tag">Identity Protection</span><span class="tag">Risk Policies</span><span class="tag">SIEM</span></div><div class="project-footer"><span class="project-lab">Lab 07</span><span style="font-size:12px;color:#94a3b8">In progress</span></div></div>
+      <div class="project-card"><div class="project-header"><div class="project-icon pi-blue"><i class="ti ti-key"></i></div><span class="project-status status-progress">Coming soon</span></div><p class="project-name">Okta SSO &amp; Lifecycle Management</p><p class="project-desc">Configured Okta SSO for cloud apps, built automated provisioning workflows, and set up MFA policies using Okta Verify and TOTP.</p><div class="project-tags"><span class="tag">Okta</span><span class="tag">SSO</span><span class="tag">SAML</span><span class="tag">SCIM</span></div><div class="project-footer"><span class="project-lab">Lab 08</span><span style="font-size:12px;color:#94a3b8">In progress</span></div></div>
+      <div class="project-card"><div class="project-header"><div class="project-icon pi-amber"><i class="ti ti-chart-bar"></i></div><span class="project-status status-progress">Coming soon</span></div><p class="project-name">RBAC &amp; Role Assignment Cleanup</p><p class="project-desc">Audited 200+ Azure role assignments, removed direct user assignments, and created role groups aligned to least privilege principles.</p><div class="project-tags"><span class="tag">RBAC</span><span class="tag">Azure</span><span class="tag">Least Privilege</span></div><div class="project-footer"><span class="project-lab">Lab 09</span><span style="font-size:12px;color:#94a3b8">In progress</span></div></div>
+      <div class="project-card"><div class="project-header"><div class="project-icon pi-gray"><i class="ti ti-cloud-upload"></i></div><span class="project-status status-progress">Coming soon</span></div><p class="project-name">Hybrid Identity &amp; Entra Connect</p><p class="project-desc">Installed and configured Entra ID Connect to sync on-premises AD to Entra ID with password hash sync for 500+ users.</p><div class="project-tags"><span class="tag">Entra Connect</span><span class="tag">Hybrid Identity</span><span class="tag">Password Hash Sync</span></div><div class="project-footer"><span class="project-lab">Lab 10</span><span style="font-size:12px;color:#94a3b8">In progress</span></div></div>
     </div>
   </div>
-  <img class="hero-photo" src="emmanuel_profile.jpg" alt="Emmanuel Balogun">
-</div>
-
-<div class="container">
-
-  <div class="section">
-    <div class="stats-grid">
-      <div class="stat"><div class="stat-num">10</div><div class="stat-label">IAM Labs</div></div>
-      <div class="stat"><div class="stat-num">50</div><div class="stat-label">Users Provisioned</div></div>
-      <div class="stat"><div class="stat-num">6</div><div class="stat-label">Security Groups</div></div>
-      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Certifications</div></div>
-      <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Years Experience</div></div>
-    </div>
-  </div>
-
-  <div class="section" id="labs">
-    <p class="section-label">Labs</p>
-    <div class="projects-grid">
-
-      <div class="project-card" onclick="window.open('https://github.com/Emmanuel-IAM-LAB/IAM-Portfolio/tree/main/lab-01-user-lifecycle-management','_blank')">
-        <div class="project-header">
-          <div class="project-icon pi-teal"><i class="ti ti-users"></i></div>
-          <span class="project-status status-done">Complete</span>
-        </div>
-        <p class="project-name">User Lifecycle Management</p>
-        <p class="project-desc">Bulk provisioned 50 users across 25+ US states with full identity attributes. Created 6 security groups and simulated secure offboarding of a terminated employee.</p>
-        <div class="project-tags"><span class="tag">Entra ID</span><span class="tag">Graph PowerShell</span><span class="tag">Provisioning</span><span class="tag">Offboarding</span></div>
-        <div class="project-footer">
-          <span class="project-lab">Lab 01</span>
-          <a class="project-link" href="https://github.com/Emmanuel-IAM-LAB/IAM-Portfolio/tree/main/lab-01-user-lifecycle-management" target="_blank"><i class="ti ti-external-link"></i>View lab</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-blue"><i class="ti ti-shield-lock"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">MFA & Conditional Access</p>
-        <p class="project-desc">Simulated a phishing attack and built Conditional Access policies enforcing MFA, blocking legacy auth, and restricting sign-ins by location and device compliance.</p>
-        <div class="project-tags"><span class="tag">Conditional Access</span><span class="tag">MFA</span><span class="tag">Zero Trust</span><span class="tag">Entra ID</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 02</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-purple"><i class="ti ti-crown"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">Privileged Identity Management</p>
-        <p class="project-desc">Removed permanent admin assignments and configured PIM just-in-time access with approval workflows, time limits, and audit logging for privileged roles.</p>
-        <div class="project-tags"><span class="tag">PIM</span><span class="tag">Least Privilege</span><span class="tag">JIT Access</span><span class="tag">Entra ID P2</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 03</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-amber"><i class="ti ti-clipboard-check"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">Identity Governance & Access Reviews</p>
-        <p class="project-desc">Configured access reviews to audit group memberships, notify managers for approval, and auto-remove stale access after 14 days.</p>
-        <div class="project-tags"><span class="tag">Access Reviews</span><span class="tag">Identity Governance</span><span class="tag">Entitlement Mgmt</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 04</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-coral"><i class="ti ti-network"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">Zero Trust & Guest Access</p>
-        <p class="project-desc">Configured B2B guest access with scoped entitlement packages, expiration dates, and auto-removal for third-party vendors following Zero Trust principles.</p>
-        <div class="project-tags"><span class="tag">Zero Trust</span><span class="tag">B2B Guest</span><span class="tag">Entitlement Mgmt</span><span class="tag">RBAC</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 05</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-green"><i class="ti ti-device-desktop"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">Active Directory Home Lab</p>
-        <p class="project-desc">Built a full on-premises AD environment with Windows Server 2022, OUs, GPOs, fine-grained password policies, and domain-joined clients simulating a real enterprise.</p>
-        <div class="project-tags"><span class="tag">Active Directory</span><span class="tag">Windows Server</span><span class="tag">GPO</span><span class="tag">PowerShell</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 06</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-pink"><i class="ti ti-refresh-alert"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">Identity Protection & Risk Policies</p>
-        <p class="project-desc">Configured Entra ID Protection to detect risky sign-ins, set up risk-based Conditional Access policies, and automated remediation workflows.</p>
-        <div class="project-tags"><span class="tag">Identity Protection</span><span class="tag">Risk Policies</span><span class="tag">SIEM</span><span class="tag">Entra ID</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 07</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-blue"><i class="ti ti-key"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">Okta SSO & Lifecycle Management</p>
-        <p class="project-desc">Configured Okta Single Sign-On for cloud apps, built automated provisioning and deprovisioning workflows, and set up MFA policies using Okta Verify and TOTP.</p>
-        <div class="project-tags"><span class="tag">Okta</span><span class="tag">SSO</span><span class="tag">SAML</span><span class="tag">SCIM</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 08</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-amber"><i class="ti ti-chart-bar"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">RBAC & Role Assignment Cleanup</p>
-        <p class="project-desc">Audited 200+ Azure role assignments, removed direct user assignments, created role groups aligned to least privilege, and documented the full RBAC remediation.</p>
-        <div class="project-tags"><span class="tag">RBAC</span><span class="tag">Azure</span><span class="tag">Least Privilege</span><span class="tag">Audit</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 09</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header"><div class="project-icon pi-gray"><i class="ti ti-cloud-upload"></i></div><span class="project-status status-progress">Coming soon</span></div>
-        <p class="project-name">Hybrid Identity & Entra Connect</p>
-        <p class="project-desc">Installed and configured Entra ID Connect to sync on-premises Active Directory to Entra ID with password hash sync, enabling seamless hybrid identity for 500+ users.</p>
-        <div class="project-tags"><span class="tag">Entra Connect</span><span class="tag">Hybrid Identity</span><span class="tag">Password Hash Sync</span></div>
-        <div class="project-footer"><span class="project-lab">Lab 10</span><span style="font-size:12px;color:#94a3b8">In progress</span></div>
-      </div>
-
-    </div>
-  </div>
-
   <div class="section" id="skills">
     <p class="section-label">Technical skills</p>
     <div class="skills-grid">
@@ -436,10 +168,9 @@ footer{background:#f8fafc;border-top:1px solid #e2e8f0;padding:2.5rem 2rem;margi
       <div class="skill-card"><p class="skill-name"><i class="ti ti-key"></i>Okta</p><div class="skill-bar-bg"><div class="skill-bar sb-teal" style="width:75%"></div></div></div>
       <div class="skill-card"><p class="skill-name"><i class="ti ti-shield"></i>Zero Trust</p><div class="skill-bar-bg"><div class="skill-bar sb-blue" style="width:70%"></div></div></div>
       <div class="skill-card"><p class="skill-name"><i class="ti ti-certificate"></i>CompTIA Security+</p><div class="skill-bar-bg"><div class="skill-bar sb-coral" style="width:85%"></div></div></div>
-      <div class="skill-card"><p class="skill-name"><i class="ti ti-crown"></i>PIM & Governance</p><div class="skill-bar-bg"><div class="skill-bar sb-purple" style="width:70%"></div></div></div>
+      <div class="skill-card"><p class="skill-name"><i class="ti ti-crown"></i>PIM &amp; Governance</p><div class="skill-bar-bg"><div class="skill-bar sb-purple" style="width:70%"></div></div></div>
     </div>
   </div>
-
   <div class="section">
     <p class="section-label">Soft skills</p>
     <div class="soft-grid">
@@ -451,9 +182,7 @@ footer{background:#f8fafc;border-top:1px solid #e2e8f0;padding:2.5rem 2rem;margi
       <div class="soft-card"><div class="soft-icon si-green"><i class="ti ti-trending-up"></i></div><p class="soft-name">Adaptability</p><p class="soft-desc">Stay current with evolving IAM technologies, cloud identity platforms, and emerging threats while continuously improving skills through hands-on lab work and certifications.</p></div>
     </div>
   </div>
-
 </div>
-
 <footer id="contact">
   <div class="footer-inner">
     <div class="footer-contact">
@@ -462,9 +191,8 @@ footer{background:#f8fafc;border-top:1px solid #e2e8f0;padding:2.5rem 2rem;margi
       <a class="footer-item" href="https://github.com/Emmanuel-IAM-LAB/IAM-Portfolio" target="_blank"><i class="ti ti-brand-github"></i>GitHub</a>
       <a class="footer-item" href="https://www.linkedin.com/in/emmanuel-b-616a0137a" target="_blank"><i class="ti ti-brand-linkedin"></i>LinkedIn</a>
     </div>
-    <span class="footer-copy">© 2026 Emmanuel Balogun | IAM Portfolio</span>
+    <span class="footer-copy">&copy; 2026 Emmanuel Balogun | IAM Portfolio</span>
   </div>
 </footer>
-
 </body>
 </html>
